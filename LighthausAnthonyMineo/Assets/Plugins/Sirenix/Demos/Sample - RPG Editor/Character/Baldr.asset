@@ -3,8 +3,9 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -910,11 +911,11 @@ MonoBehaviour:
     Stats:
       stats:
       - Type: 0
-        Value: 47.058823
+        Value: 60.158443
       - Type: 1
-        Value: 40.356865
+        Value: 14.516129
       - Type: 2
-        Value: 23.033136
+        Value: 14.516129
       - Type: 3
         Value: 16.103643
       - Type: 4
