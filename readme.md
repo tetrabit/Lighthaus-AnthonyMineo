@@ -39,7 +39,7 @@ The path the blood takes should be configurable in the Unity editor, and should 
 
 Upon selecting any gameobject in the heirarchy with a SplineComputer component on it you will see circular handles which will allow you to edit the bezier curve.
 
-![Spline](https://github.com/tetrabit/Lighthaus-AnthonyMineo/blob/master/GithubAssets/Spline.png?raw=true)
+![Spline](/GithubAssets/Spline.png?raw=true)
 
 If further info is needed I would recommend investigating the Dreamteck Splines Documentation [here](https://dreamteck.io/page/dreamteck_splines/user_manual.pdf)
 
@@ -48,4 +48,4 @@ The speed and color of the blood flow should be configurable in the Unity editor
 
 On both of the particle system objects there is a ParticalManager component which will allow you to edit the color, speed, and direction of the particles. I felt adding direction was necessary as with dreamteck splines controlling the particle system's direction a negative speed would not reverse the particle system.
 
-![ParticleManager](https://github.com/tetrabit/Lighthaus-AnthonyMineo/blob/master/GithubAssets/ParticleManager.png?raw=true)
+![ParticleManager](/GithubAssets/ParticleManager.png?raw=true)
