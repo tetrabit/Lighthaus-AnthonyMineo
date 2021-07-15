@@ -37,7 +37,8 @@ public class ParticleManager : MonoBehaviour
     private void Init()
     {
         ParticleSystem = GetComponent<ParticleSystem>();
-        ParticleController = GetComponent<ParticleController>(); ParticleSystem.MainModule main = ParticleSystem.main;
+        ParticleController = GetComponent<ParticleController>(); 
+        ParticleSystem.MainModule main = ParticleSystem.main;
         ParticleSystem.ColorOverLifetimeModule colorOverLifetime = ParticleSystem.colorOverLifetime;
         colorOverLifetime.color = _gradient;
         main.simulationSpeed = _speed;
