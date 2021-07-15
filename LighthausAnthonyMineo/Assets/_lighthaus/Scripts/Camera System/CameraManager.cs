@@ -2,15 +2,18 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using Zenject;
 
-public class SwitchCamera : MonoBehaviour
+public class CameraManager : MonoBehaviour
 {
     private List<Camera> _cameras = new List<Camera>();
     private int _currentCamera = 0;
 
-    private void Awake()
+    [Inject]
+    private void Construct(OrbitCamera orbitCamera, SplineCamera splineCamera)
     {
-        _cameras = FindObjectsOfType<Camera>().ToList();
+        _cameras.Add(orbitCamera.Camera);
+        _cameras.Add(splineCamera.Camera);
     }
 
     void Start()
@@ -35,8 +38,10 @@ public class SwitchCamera : MonoBehaviour
 
     private void UpdateCamera()
     {
-        if (_currentCamera < 0 || _currentCamera > _cameras.Count() - 1)
+        if (_currentCamera > _cameras.Count() - 1)
             _currentCamera = 0;
+        else if (_currentCamera < 0)
+            _currentCamera = _cameras.Count() - 1;
 
         for (int i = 0; i < _cameras.Count(); i++)
         {
