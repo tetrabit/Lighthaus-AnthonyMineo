@@ -26,6 +26,18 @@ Cubemap for Skybox.
 Flesh PBR Textures from https://juliosillet.gumroad.com/:
 Used for vein and heart materials.
 
+Primitive Plus https://assetstore.unity.com/packages/3d/characters/primitive-plus-25542:
+Used for average velocity cone model
+
+Zenject https://github.com/modesttree/Zenject:
+Dependency injection framework used to follow the Dependency Injection programming pattern.
+
+Unirx https://github.com/neuecc/UniRx:
+ReactiveX extensions for unity. Used to interact with Zenjects signal messaging system as well as various reactiveX tricks.
+
+UGUI Tools https://forum.unity.com/threads/scripts-useful-4-6-scripts-collection.264161/:
+Helper script for moving UI anchors to corners which allows for proper resizing of UI Elements.
+
 ## Documentation
 
 Requirement 1
@@ -49,3 +61,7 @@ The speed and color of the blood flow should be configurable in the Unity editor
 On both of the particle system objects there is a ParticalManager component which will allow you to edit the color, speed, and direction of the particles. I felt adding direction was necessary as with dreamteck splines controlling the particle system's direction a negative speed would not reverse the particle system.
 
 ![ParticleManager](/GithubAssets/ParticleManager.png?raw=true)
+
+7/14/2021
+
+Update for added technical specifications. Added Systems for measuring various telemetry data and displaying them involving the cell particles.
